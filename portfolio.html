@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yiyi He | Multimodal Pathology Research</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Yiyi He</h1>
+    <p>PhD Candidate in Multimodal Pathology | Murdoch University</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research &amp; Projects</a></li>
+      <li><a href="#blog">Blog &amp; Tutorials</a></li>
+      <li><a href="#skills">Skills &amp; Expertise</a></li>
+      <li><a href="#quiz">Pathology Quiz</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a PhD candidate at Murdoch University, where my research focuses on multimodal
+        approaches in pathology — combining imaging, molecular, and clinical data to better
+        understand disease at a systems level. I am passionate about making computational
+        pathology methods more accessible and robust, which is why I created this space to 
+        document my research journey and share what I learn along the way.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research &amp; Projects</h2>
+
+        <article>
+        <h3>Multimodal Integration in Computational Pathology</h3>
+        <p>
+            My doctoral research investigates how combining multiple data modalities —
+            such as whole-slide imaging, transcriptomics, and clinical metadata — can
+            improve diagnostic accuracy and disease characterisation in pathology.
+        </p>
+
+        <button
+            class="toggle-details"
+            type="button"
+            aria-expanded="false"
+            aria-controls="research-details"
+        >
+            Show details
+        </button>
+
+        <div id="research-details" hidden>
+            <p><strong>Focus:</strong> Multimodal data fusion in pathology</p>
+            <p><strong>Institution:</strong> Murdoch University</p>
+            <p><strong>Methods:</strong> Whole-slide imaging, transcriptomics, clinical metadata integration</p>
+        </div>
+        </article>
+    </section>
+
+    <section id="blog">
+      <h2>Blog &amp; Tutorials</h2>
+      <p>
+        Alongside my research, I document my personal PhD journey and share practical
+        tutorials for anyone interested in multimodal AI, computational pathology, or
+        getting started with the tools I use day-to-day. My goal is to lower the barrier
+        for others entering this field.
+      </p>
+
+      <article>
+        <article>
+  <h3>Personal Journey</h3>
+  <p>
+    From navigating the early stages of a PhD to figuring out which tools
+    actually work in practice...
+  </p>
+
+  <button
+    class="toggle-details"
+    type="button"
+    aria-expanded="false"
+    aria-controls="blog-journey-details"
+  >
+    Show details
+  </button>
+
+  <div id="blog-journey-details" hidden>
+    <p><strong>Topics covered:</strong> PhD life, research process, setbacks and wins</p>
+    <p><strong>Audience:</strong> Researchers considering computational pathology</p>
+  </div>
+</article>
+
+<article>
+  <h3>Tutorials</h3>
+  <p>
+    Step-by-step guides covering whole-slide images, multimodal data pipelines,
+    and Python workflows for pathology research.
+  </p>
+
+  <button
+    class="toggle-details"
+    type="button"
+    aria-expanded="false"
+    aria-controls="blog-tutorials-details"
+  >
+    Show details
+  </button>
+
+  <div id="blog-tutorials-details" hidden>
+    <p><strong>Topics covered:</strong> Whole-slide image processing, Python pipelines, reproducible research</p>
+    <p><strong>Audience:</strong> Researchers wanting practical starting points</p>
+  </div>
+</article>
+
+
+      <article>
+        <h3>Tutorials</h3>
+        <p>
+          Step-by-step guides covering topics such as working with whole-slide images,
+          multimodal data pipelines, and Python workflows for pathology research.
+          Written for researchers who want practical, reproducible starting points.
+        </p>
+      </article>
+    </section>
+    <section id="quiz">
+  <h2>Test Your Basic Pathology Knowledge</h2>
+  <p>A short quiz to explore key concepts in pathology. Select an answer and press Submit.</p>
+
+  <div id="quiz-container">
+    <p id="question-number">Question 1 of 5</p>
+    <p id="question-text"></p>
+
+    <div id="options-container"></div>
+
+    <p id="feedback" aria-live="polite"></p>
+
+    <div id="quiz-controls">
+      <button type="button" id="submit-btn">Submit answer</button>
+      <button type="button" id="next-btn" hidden>Next question</button>
+    </div>
+
+    <div id="quiz-result" hidden>
+      <p id="result-text"></p>
+      <button type="button" id="restart-btn">Restart quiz</button>
+    </div>
+  </div>
+</section>
+
+    <section id="skills">
+      <h2>Skills &amp; Expertise</h2>
+      <ul>
+        <li>Computational Pathology</li>
+        <li>Multimodal Deep Learning</li>
+        <li>Whole-Slide Image Analysis</li>
+        <li>Python and PyTorch</li>
+        <li>Data Visualisation</li>
+        <li>Scientific Writing</li>
+        <li>Technical Blogging and Science Communication</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I welcome conversations about research collaborations, tutorial requests,
+        or anything related to multimodal pathology.
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:Yiyi.He@murdoch.edu.au">Yiyi.He@murdoch.edu.au</a></p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Yiyi He</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
